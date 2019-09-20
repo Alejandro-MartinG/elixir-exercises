@@ -9,7 +9,6 @@ defmodule Series do
   
   def sum(n) do
     (1..Kernel.-(n, 1))
-    |> Enum.to_list()
     |> Enum.map(fn(x) -> (1 / (3 * x + 1)) end)
     |> Enum.sum()
     |> Kernel.+(1)
